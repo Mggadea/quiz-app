@@ -5,29 +5,52 @@
 }
 
 h1 {
-  font-size: 5rem;
-  font-weight: bold;
-  color: #fff;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #f2f2f2;
+}
+
+h2 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #2f527b;
 }
 
 .container {
   background-image: url("./assets/images/background.png");
-  height: 100vh;
   display: flex;
+  height: 100vh;
+  width: 100vw;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
 .quiz-container {
-  margin-top: 2rem;
+  display: flex;
   background-color: #fff;
   border-radius: 20px;
-  height: 50%;
-  width: 25%;
+  height:559px;
+  width: 464px;
   padding: 50px;
-  display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.question-container{
+  display: flex;
+  width: 100%;
+  height: 50px;
+  justify-content: center;
   align-items: center;
 }
 
@@ -46,39 +69,45 @@ h1 {
   border-radius: 10px;
   width: 100%;
   height: 3rem;
-  border: 2px solid #5357a6;
-  color: #5357a6;
+  border: 2px solid rgba(96, 102, 208, 0.7);
+  color: rgba(96, 102, 208, 0.7);
   font-size: 1.2rem;
+  background-color: #fff;
   font-weight: bold;
   margin-top: 20px;
   cursor: pointer;
 }
 
+.buttonIsCorrect {
+  background-color: #60bf88;
+}
+.buttonIsIncorrect {
+  background-color: #ea8282;
+}
+
 .button:hover {
-  background-color: #ebb344;
+  background-color: #f9a826;
   color: #fff;
-  border: solid #ebb344;
+  border: solid #f9a826;
 }
 
-@media (max-width: 480px) {
-  .quiz-container {
-    height: 60%;
-    width: 80%;
-  }
+.buttonNewGame {
+  width: 209px;
+  height: 62px;
+  left: 615px;
+  top: 699px;
+  border: 2px solid #1d355d;
+  color: #1d355d;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-radius: 12px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
 }
-
-@media (max-width: 768px) {
-  .quiz-container {
-    height: 50%;
-    width: 60%;
-  }
+.buttonNewGame:hover {
+  background-color: #1d355d;
+  color: #fff;
 }
-
-@media (max-width: 1024px) {
-  .quiz-container {
-    height: 50%;
-    width: 60%;
-  }
-}
-
 

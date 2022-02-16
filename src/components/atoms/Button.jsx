@@ -1,21 +1,14 @@
 import React from "react";
 import "../../App.css";
-import {GameContext} from "../../App";
+import { GameContext } from "../../App";
 
-const Boton = ({ options, isValid }) => {
+const Boton = ({ options }) => {
+  const { handleNextQuestion } = React.useContext(GameContext);
 
-    const {handleNextQuestion}= React.useContext(GameContext);
-
-
-    const handleClick = () => {
-        handleNextQuestion();
-    };
-
-    
 
   return (
-    <button onClick={handleClick} className="button">
-      <p>{options}</p>
+    <button onClick={ () => handleNextQuestion ( options ) } className="button" >
+      <p>{options.answerText}</p>
     </button>
   );
 };

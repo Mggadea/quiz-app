@@ -6,7 +6,7 @@ import '../../App.css';
 const OptionsContainer = ({options}) => (
   <div className="options-container">
    {options.map((option, index) => (
-      <Boton options={option.answerText} isValid={option.isCorrect}/>
+      <Boton key={index} options={option} />
     ))}
   </div>
 )
